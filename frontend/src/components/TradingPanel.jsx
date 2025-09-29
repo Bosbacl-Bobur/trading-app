@@ -28,14 +28,14 @@ export default function TradingPanel() {
           {trades.map((trade) => (
             <li
               key={trade.id}
-              className="flex justify-between items-center border-b pb-2"
+              className="flex  justify-between items-center border-b pb-2"
             >
               <span className="font-medium">{trade.type} — ${trade.amount}</span>
               <span
                 className={`font-bold ${
                   trade.result > 0 ? "text-green-600" : "text-red-600"
-                }`}
-              >
+                }`}   
+              > 
                 {trade.result > 0 ? `+${trade.result}$` : `${trade.result}$`}
               </span>
             </li>
